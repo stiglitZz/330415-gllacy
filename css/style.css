@@ -74,14 +74,24 @@
 body {
  font-style: 'Roboto', serif;
  font-size: 18px;
- font-weight: bold;
+ font-weight: 700;
  line-height: 1.5;
  color: #fff;
  background: #849d8f;
 }
 a {
   color: #fff;
-  
+}
+
+/* ============================================FONTS=========================*/
+
+.main-navigation {
+  font-size: 16px;
+} 
+.user-block,
+label {
+  font-size: 14px;
+  font-weight: 500;
 }
 .shedule {
   font-size: 0;
@@ -100,11 +110,15 @@ a {
 .btn-main {
   font-size: 32px;
 }
-.title-promo {
+.title-promo,
+.title-catalog {
   font-size: 35px;
 }
-.item-description {
-  font-size: 16px;
+.item-description,
+.values-form,
+.btn-apply,
+.paginator {
+  font-size: 16px; 
   font-weight: 500;
 }
 .price-item {
@@ -152,3 +166,9 @@ a {
   color: #fff;
   font-weight: 400;
 }
+.catalog-breadcrumbs {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ============================================FONTS=========================*/
