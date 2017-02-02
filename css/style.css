@@ -214,6 +214,9 @@ label {
   width: 410px;
 }
 .promo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
   width: 1146px;
 }
 .promo-left,.promo-right {
@@ -284,6 +287,7 @@ label {
 .promo-left .title-promo,
 .promo-right .title-promo {
   position: absolute;
+  top: 10px;
   left: 15px;
 }
 .promo-left p,
