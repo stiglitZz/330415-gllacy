@@ -1,21 +1,385 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Regular"),
+  url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+  
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Italic"),
+  url('../fonts/Roboto-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Bold"),
+  url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-BoldItalic"),
+  url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Black"),
+  url('../fonts/Roboto-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-BlackItalic"),
+  url('../fonts/Roboto-BlackItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Light"),
+  url('../fonts/'Roboto-Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 300;   
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-LightItalic"), 
+  url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Medium"),
+  url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-MediumItalic"),
+  url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+}
+
+
 body {
-  font-size: 16px;
-  line-height: 22px;
-  color: #666666;
-  font-weight: normal;
-  font-family: Roboto, serif;
+ font-style: 'Roboto', serif;
+ padding: 0;
+ margin: 0;
+ font-size: 18px;
+ font-weight: 700;
+ line-height: 1.5;
+ color: #fff;
+ background: #849d8f;
 }
-h2 {
+a {
+  color: #fff;
+}
+
+/* ============================================FONTS=========================*/
+
+.main-navigation {
+  font-size: 16px;
+} 
+.user-block,
+label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.shedule {
+  font-size: 0;
+}
+.shedule p {
+  font-size: 14px;
+}
+.shedule span {
+  font-size: 22px;
+  
+}
+.logo-text {
+  font-size: 60px;
+  line-height: 1;
+}
+.btn-main {
+  font-size: 32px;
+}
+.title-promo,
+.title-catalog {
   font-size: 35px;
-  line-height: 41px;
-  color: #ffffff;
-  font-weight: bold;
-  font-family: inherit;
 }
-h6 {
-  font-size: 16px;
-  line-height: 22px;
+.item-description,
+.values-form,
+.btn-apply,
+.paginator {
+  font-size: 16px; 
+  font-weight: 500;
+}
+.img-item span {
+  font-size: 45px;
+}
+.title-features {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
   color: #323232;
-  font-weight: lighter;
-  font-family: Roboto, serif;
+}
+.post-feature {
+  font-weight: 400;
+  line-height: 1;
+  color: #323232;
+}
+.title-news {
+  font-weight: 500;
+  color: #323232;
+}
+.index-news p > a{
+  font-size: 24px;
+  color: #323232;
+}
+.index-subscribe p {
+  color: #5a5a5a;
+  font-weight: 400;
+}
+.index-address  p,
+.index-address p > .link-phone
+ {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+}
+.index-address p > strong,
+.index-address p > .link-phone {
+  font-size: 18px;
+}
+.footer-menu {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+}
+.footer-copyright {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+}
+.catalog-breadcrumbs {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ===========================^^^^^========FONTS========================^^^=*/
+
+.container {
+  width: 1150px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+}
+
+.index-logo {
+  width: 154px;
+  height: 64px;
+}
+.main-header-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+}
+.user-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+}
+.shedule {
+  margin-left: auto;
+}
+.main-navigation {
+  margin-right: auto;
+}
+.main-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  width: 410px;
+}
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  width: 1146px;
+}
+.promo-left,.promo-right {
+  width: 560px;
+}
+.post-feature {
+  width: 1125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.post-feature li {
+  width: 540px;
+  height: 110px;
+}
+
+.title-features {
+  width: 995px;
+}
+  
+
+.main-image {
+  position: relative;
+  width: 647px;
+  height: 584px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo-text {
+  position: absolute;
+  bottom: 110px;
+}
+.btn-main {
+  position: absolute;
+  bottom: 70px;
+  left: 230px;
+
+}
+.slider-image {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+.btn-toggles {
+  width: 80px;
+  position: absolute;
+  bottom: 70px;
+  left: -255px;
+
+}
+.img-item  img {
+  border-radius: 50%;
+}
+.promo-left,
+.promo-right,
+.img-item,
+.index-features,
+.index-news,
+.index-subscribe,
+.index-map
+ {
+  position: relative;
+  
+}
+.promo-left .title-promo,
+.promo-right .title-promo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.promo-left p,
+.promo-right p {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+.promo-left .btn-promo,
+.promo-right .btn-promo {
+  position: absolute;
+  bottom: 20px;
+  left: 380px;
+
+}
+.img-item {
+  width: 267px;
+  height: 267px;
+}
+.img-item .hit {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+.img-item span {
+  position: absolute;
+  left: -10px;
+  bottom: 25px;
+
+}
+.item-description {
+  width: 267px;
+}
+.title-features {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.post-feature {
+  position: absolute;
+  top: 90px;
+}
+.title-news {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.index-news p {
+  width: 285px;
+  position: absolute;
+  top: 35px;
+  left: 40px;
+}
+.index-subscribe p {
+  width: 520px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.index-subscribe form {
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+}
+.index-address {
+  position: absolute;
+  right: 10px; 
+  bottom: 40px; 
+  width: 300px;
+  height: 305px;
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+.btn-feedback {
+  background-color: #356;
+  padding: 10px;
+  margin-top: 10px;
+}
+.map-pin {
+  position: absolute;
+  bottom: 150px;
+  width: 218px;
+  height: 142px;
+}
+.index-map {
+  width: 1200px;
+  height: 430px;
+}
+
+  
+
+a:not(.method) {
+  text-decoration: none;
 }
