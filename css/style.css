@@ -73,6 +73,8 @@
 
 body {
  font-style: 'Roboto', serif;
+ padding: 0;
+ margin: 0;
  font-size: 18px;
  font-weight: 700;
  line-height: 1.5;
@@ -121,16 +123,18 @@ label {
   font-size: 16px; 
   font-weight: 500;
 }
-.price-item {
+.img-item span {
   font-size: 45px;
 }
 .title-features {
   font-size: 24px;
+  line-height: 1;
   font-weight: 500;
   color: #323232;
 }
 .post-feature {
   font-weight: 400;
+  line-height: 1;
   color: #323232;
 }
 .title-news {
@@ -171,4 +175,207 @@ label {
   font-weight: 400;
 }
 
-/* ============================================FONTS=========================*/
+/* ===========================^^^^^========FONTS========================^^^=*/
+
+.container {
+  width: 1150px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+}
+
+.index-logo {
+  width: 154px;
+  height: 64px;
+}
+.main-header-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+}
+.user-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+}
+.shedule {
+  margin-left: auto;
+}
+.main-navigation {
+  margin-right: auto;
+}
+.main-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  width: 410px;
+}
+.promo {
+  width: 1146px;
+}
+.promo-left,.promo-right {
+  width: 560px;
+}
+.post-feature {
+  width: 1125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.post-feature li {
+  width: 540px;
+  height: 110px;
+}
+
+.title-features {
+  width: 995px;
+}
+  
+
+.main-image {
+  position: relative;
+  width: 647px;
+  height: 584px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo-text {
+  position: absolute;
+  bottom: 110px;
+}
+.btn-main {
+  position: absolute;
+  bottom: 70px;
+  left: 230px;
+
+}
+.slider-image {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+.btn-toggles {
+  width: 80px;
+  position: absolute;
+  bottom: 70px;
+  left: -255px;
+
+}
+.img-item  img {
+  border-radius: 50%;
+}
+.promo-left,
+.promo-right,
+.img-item,
+.index-features,
+.index-news,
+.index-subscribe,
+.index-map
+ {
+  position: relative;
+  
+}
+.promo-left .title-promo,
+.promo-right .title-promo {
+  position: absolute;
+  left: 15px;
+}
+.promo-left p,
+.promo-right p {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+.promo-left .btn-promo,
+.promo-right .btn-promo {
+  position: absolute;
+  bottom: 20px;
+  left: 380px;
+
+}
+.img-item {
+  width: 267px;
+  height: 267px;
+}
+.img-item .hit {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+.img-item span {
+  position: absolute;
+  left: -10px;
+  bottom: 25px;
+
+}
+.item-description {
+  width: 267px;
+}
+.title-features {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.post-feature {
+  position: absolute;
+  top: 90px;
+}
+.title-news {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.index-news p {
+  width: 285px;
+  position: absolute;
+  top: 35px;
+  left: 40px;
+}
+.index-subscribe p {
+  width: 520px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.index-subscribe form {
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+}
+.index-address {
+  position: absolute;
+  right: 10px; 
+  bottom: 40px; 
+  width: 300px;
+  height: 305px;
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+.btn-feedback {
+  background-color: #356;
+  padding: 10px;
+  margin-top: 10px;
+}
+.map-pin {
+  position: absolute;
+  bottom: 150px;
+  width: 218px;
+  height: 142px;
+}
+.index-map {
+  width: 1200px;
+  height: 430px;
+}
+
+  
+
+a:not(.method) {
+  text-decoration: none;
+}
