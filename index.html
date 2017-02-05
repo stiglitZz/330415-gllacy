@@ -239,49 +239,56 @@
             и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form>
-            <input type="email" name="email" placeholder="Электронная почта">
+            <input class="inputemail" type="email" name="email" placeholder="Электронная почта">
             <input class="btn-subscribe" type="submit" name="submit"
             value="Отправить">
           </form>
         </div>
       </div>
       </div>
+      
 
       <div class="index-map">
-        <img src="img/map.jpg" width="1200" height="430" alt="карта">
-        <img class="map-pin" src="img/map_pin.png" width="218" height="142" alt="Мы тут! :)">
-        <aside class="index-address">
+         <div class="map-img">
+          <img src="img/map.jpg" width="100%" height="430" alt="карта">
+         </div>
+         <div class="mappin-img"> 
+          <img class="map-pin" src="img/map_pin.png" width="218" height="142" alt="Мы тут! :)">
+         </div> 
+        <div class="index-address">
           <p>
             Адрес главного офиса<br>
             и офлайн магазина:<br>
             <strong>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</strong><br>
-            Для заказов по телефону:<br>
+            <span>Для заказов по телефону:<br></span>
             <a class="link-phone" href="tel:+78124502525"><strong>8 812 450-25-25</strong></a>
             <br>
             (с 10 до 20 ежедневно)<br>
             <a class="btn-feedback" href="#">Форма обратной связи</a>
           </p>
-        </aside>
+        </div>
       </div>
+
 
       
     </main>
 
     <footer>
+    <div class="container footer-layout">
       
       <section class="footer-social">
         <ul>
           <li>
-            <a class="social-btn twt-btn" href="#"></a>
+            <a class="social-btn twt-btn" href="#">Twitter</a>
           </li>
           <li>
-            <a class="social-btn inst-btn" href="#"></a>
+            <a class="social-btn inst-btn" href="#">Instagramm</a>
           </li>
           <li>
-            <a class="social-btn fb-btn" href="#"></a>
+            <a class="social-btn fb-btn" href="#">Facebook</a>
           </li>
           <li>
-            <a class="social-btn vk-btn" href="#"></a>
+            <a class="social-btn vk-btn" href="#">VK</a>
           </li>
         </ul>
       </section>
@@ -292,10 +299,11 @@
             <a href="#"><strong>Для поставщиков</strong></a>
           </li>
           <li>
-            <a href="#">О производстве</a>
+            <a href="#">Наши документы</a>
+
           </li>
           <li>
-            <a href="#">Наши документы</a>
+            <a href="#">О производстве</a>
           </li>
           <li>
             <a href="#">Экологические стандарты</a>
@@ -304,12 +312,15 @@
       </section>
 
       <section class="footer-copyright">
-        <img src="img/logo_footer.png" width="108" height="38"
-        alt="copyright">
-        <p>
-          Сделано в <a href="#">HTML Academy</a> © 2017
-        </p>
+        <div class="htmlacademy">
+          <img src="img/logo_footer.png" width="108" height="38"
+          alt="copyright">
+          <p>
+            Сделано в <a class="academylink" href="#">HTML Academy</a> © 2017
+          </p>
+        </div>
       </section>
+      </div>
     </footer>
   
   </body>

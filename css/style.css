@@ -72,7 +72,9 @@
 
 
 body {
- font-style: 'Roboto', serif;
+ font-style: 'Roboto';
+ width: 100%;
+ height: 100%;
  padding: 0;
  margin: 0;
  font-size: 18px;
@@ -82,6 +84,7 @@ body {
  background: #849d8f;
 }
 a {
+  font-style: 'Roboto';
   color: #fff;
 }
 
@@ -112,6 +115,9 @@ label {
 }
 .btn-main {
   font-size: 32px;
+}
+.promo, .header-top {
+  font-family: 'Roboto';
 }
 .title-promo,
 .title-catalog {
@@ -155,6 +161,7 @@ label {
 .index-address  p,
 .index-address p > .link-phone
  {
+  font-family: 'Roboto';
   color: #323232;
   font-size: 14px;
   font-weight: 400;
@@ -186,6 +193,7 @@ label {
   margin: 0 auto;
 
 }
+
 .header-top {
   margin-top: 20px;
 }
@@ -211,7 +219,9 @@ label {
   margin-top: 20px;
   
 }
-.main-navigation a {
+.main-navigation a,
+.footer-menu a,
+.academylink {
   
   box-shadow: 0px -2px 0px 0px rgba(159, 180, 169, 0.5) inset;
 
@@ -283,10 +293,10 @@ label {
   line-height: 33px;
   padding-left: 45px;
   background-color: #a1b5aa;
-  border-top-left-radius: 13px;
-  border-bottom-left-radius: 13px;
-  border-top-right-radius: 13px;
-  border-bottom-right-radius: 13px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
   position: relative;  
 
 }
@@ -341,6 +351,15 @@ label {
   cursor: pointer;
   position: relative;
 }
+.btn-toggle + label:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+
+  width: 25px;
+  height: 25px;
+
+}
+
 .btn-toggle + label::before {
   content: "";
   display: inline-block;
@@ -449,8 +468,9 @@ label {
 .logo-text {
   display: block;
   position: absolute;
-  bottom: 110px;
+  bottom: 113px;
   right: -15px;
+  width: 670px;
 }
 
 .btn-toggles {
@@ -501,6 +521,7 @@ label {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
 }
 
 .img-item {
@@ -530,52 +551,69 @@ label {
 
 .title-news {
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 20px;
+  left: 20px;
 }
 .index-news p {
   width: 285px;
   position: absolute;
-  top: 35px;
-  left: 40px;
+  top: 30px;
+  left: 20px;
 }
 .index-subscribe p {
   width: 520px;
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 20px;
+  margin-left: 5px;
 }
 .index-subscribe form {
   position: absolute;
   bottom: 35px;
-  left: 20px;
+  left: 25px;
+  
 }
 .index-address {
   position: absolute;
-  right: 10px; 
-  bottom: 40px; 
-  width: 300px;
+  right: 55px; 
+  bottom: 30px; 
+  width: 270px;
   height: 305px;
   padding-left: 30px;
   padding-top: 30px;
   background-color: #fff;
 }
 .btn-feedback {
-  background-color: #356;
-  padding: 10px;
-  margin-top: 10px;
+  display: block;
+  width: 250px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #e65038;
+  font-size: 18px;
+  font-family: 'Roboto';
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 50px;
+  
+  
 }
 .map-pin {
   position: absolute;
   bottom: 150px;
+  left: 290px;
   width: 218px;
   height: 142px;
 }
+
 .index-map {
-  width: 1200px;
+  width: 100%;
   height: 430px;
 }
 .index-items {
+  font-family: 'Roboto';
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -590,13 +628,147 @@ label {
 .item-description a {
   box-shadow: 0px -2px 0px 0px rgba(159, 180, 169, 0.5) inset;
 }
-.index-features img {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+.index-features img,
+.news-sub img,
+.index-address {
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
+.index-features,
+.news-sub {
+  margin-bottom: 40px;
+}
+.news-sub::after {
+  content: "";
+  display: table;
+  clear: both;
 
+}
+.index-news {
+  float: left;
+}
+.index-subscribe {
+  float: right;
+}
+.inputemail {
+  padding: 9px;
+  width: 347px;
+  height: 21px;
+  border: 1px solid #d3d3d2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;  
+}
+.btn-subscribe {
+  min-width: 125px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  outline: none;
+  border: 0;
+  color: #fff;
+  background-color: #e65038;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 5px;  
+}
+.footer-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-social {
+  width: 210px;
+}
+.footer-social li {
+  display: inline-block;
+  font-size: 0;
+  width: 37px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: relative;
+}  
+.social-btn {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+    
+
+}
+.twt-btn {
+  display: block;
+  background: url("../img/icons/spritesheet.png") no-repeat -9px -539px;
+  opacity: 0.8;
+  
+} 
+.inst-btn {
+  display: block;
+  background: url("../img/icons/spritesheet.png") no-repeat -9px -272px;
+  opacity: 0.8;  
+}
+.fb-btn {
+  display: block;
+  background: url("../img/icons/spritesheet.png") no-repeat -9px -188px;
+  opacity: 0.8;  
+}
+.vk-btn {
+  display: block;
+  background: url("../img/icons/spritesheet.png") no-repeat -9px -590px;
+  opacity: 0.8;  
+}
+.footer-menu {
+  width: 330px;
+}
+.footer-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 330px;
+  height: 40px;
+  position: relative;
+  
+}
+.footer-menu li {
+  list-style: none;
+  width: 160px;
+  height: 20px;
+}
+.footer-menu li:first-child::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../img/icons/spritesheet.png") no-repeat -10px -240px;
+  position: absolute;
+  top: 5px;
+  left: 23px;
+
+}
+.footer-copyright {
+  width: 200px;
+  margin-top: 10px;
+  position: relative;
+  
+}
+.footer-copyright p {
+  display: block;
+  width: 190px;
+  position: absolute;
+  top: 25px;
+}
   
 
 a:not(.method) {
