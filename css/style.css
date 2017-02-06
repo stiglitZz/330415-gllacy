@@ -90,14 +90,19 @@ a {
 
 /* ============================================FONTS=========================*/
 
+.index-items
+ {
+  font-family: 'Roboto';
+}
 .main-navigation {
   font-size: 16px;
 } 
 .user-block,
-label {
+.name-filter {
+  font-family: 'Roboto';
   font-size: 14px;
-  
   font-weight: 500;
+  
 }
 .shedule {
   font-size: 0;
@@ -121,17 +126,20 @@ label {
 }
 .title-promo,
 .title-catalog {
+  font-family: 'Roboto';
   font-size: 35px;
 }
 .item-description,
 .values-form,
 .btn-apply,
 .paginator {
+  font-family: 'Roboto';
   font-size: 16px; 
   font-weight: 500;
 }
 
-.img-item span {
+.price-item {
+  font-family: 'Roboto';
   font-size: 45px;
 }
 .title-features {
@@ -181,6 +189,7 @@ label {
   font-weight: 400;
 }
 .catalog-breadcrumbs {
+  font-family: 'Roboto';
   font-size: 14px;
   font-weight: 400;
 }
@@ -337,6 +346,9 @@ label {
   line-height: 63px;
   background-color: #e74e37;
   text-align: center;
+  text-shadow: 1px 1px 9px black;
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.75),
+              -6px -7px 23px 0px rgba(255, 255, 255, 0.1) inset;
   border-top-left-radius: 27px;
   border-top-right-radius: 27px;
   border-bottom-left-radius: 27px;
@@ -613,7 +625,7 @@ label {
   height: 430px;
 }
 .index-items {
-  font-family: 'Roboto';
+  
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -773,4 +785,127 @@ label {
 
 a:not(.method) {
   text-decoration: none;
+}
+
+
+/* =================================CATALOG===============================================================*/
+
+.catalog-breadcrumbs {
+  width: 70%;
+  position: relative;
+  top: -50px;
+}
+.clearfix {
+  position: relative;
+  top: -85px;
+}  
+.catalog-breadcrumbs ul {
+  padding-left: 0;
+}
+.catalog-breadcrumbs li {
+  padding-right: 5px;
+  display: inline-block;
+  list-style: none;
+}
+.filters-block {
+  width: 900px;
+  margin-bottom: 50px;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+.filter-forms {
+  display: flex;
+  flex-wrap: wrap;
+  width: 860px;
+}
+.field-sort {
+  width: 190px;
+  height: 60px;
+}
+.field-price {
+  width: 220px;
+  height: 60px;
+}
+.field-fatness {
+  width: 420px;
+  height: 60px;
+}
+.field-fillers {
+  width: 570px;
+  height: 60px;
+}
+.btn-apply {
+  width: 150px;
+  height: 36px;
+  line-height: 30px;
+  margin-left: 25px;
+  margin-top: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: #fff;
+  display: block;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+}
+.sorting {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  height: 33px;
+  color: #fff;
+  outline: 0;
+  display: block;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;  
+  
+}
+.background-fatness {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  color: #fff;
+  width: 325px;
+  display: block;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;    
+}
+.background-fillers {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  color: #fff;
+  width: 570px;
+
+  display: block;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;   
+}
+.background-price {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  color: #fff;
+  width: 170px;
+  height: 22px;
+  display: block;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;  
+}
+.fillers-form {
+  width: 570px;
+}
+.name-filter {
+  
+  padding-left: 15px;
+  
+  
 }
