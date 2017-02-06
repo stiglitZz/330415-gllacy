@@ -836,12 +836,16 @@ fieldset {
   width: 570px;
   height: 60px;
 }
+.button-filters {
+  width: 150px;
+}
 .btn-apply {
   width: 150px;
   height: 36px;
   line-height: 30px;
   margin-left: 25px;
   margin-top: 22px;
+
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid white;
   color: #fff;
@@ -901,7 +905,8 @@ fieldset {
   border-bottom-right-radius: 15px;  
 }
 .fillers-form {
-  width: 570px;
+  width: 590px;
+
 }
 .name-filter {
   
