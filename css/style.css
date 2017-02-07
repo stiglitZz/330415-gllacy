@@ -923,6 +923,7 @@ fieldset {
   margin-left: auto;
   margin-right: 5px;
   width: 220px;
+  align-self: flex-start;
 }
 .paginator li {
   display: inline-block;
@@ -965,7 +966,7 @@ fieldset {
   height: 14px;
 }
 .dividing-line {
-  
+
   opacity: 0.3;
 }
 
