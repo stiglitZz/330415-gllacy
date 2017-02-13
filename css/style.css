@@ -561,7 +561,32 @@ input[type="search"] {
   background-position: -10px -10px;
 
 }
+.btn-basket-full {
+  width: 72px;
+  height: 33px;
+  line-height: 33px;
+  padding-left: 45px;
+  background-color: #fff;
+  color: #000;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  position: relative;  
 
+}
+.btn-basket-full::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  background-image: url("../img/icons/full_basket.png");
+  background-repeat: no-repeat;
+  
+
+}
 .shedule {
   margin-left: 101px;
 }
@@ -605,12 +630,12 @@ input[type="search"] {
   box-shadow: 0px 5px 2px 0px rgba(149, 39, 24, 1) inset;
   background-color: #e74e37;
 }
-.method:hover, .method:active , .footer-menu a:hover, .item-description a:hover, .main-navigation a:hover {
+.method:hover, .method:active , .footer-menu a:hover, .item-description a:hover, .main-navigation a:hover:not(.active) {
   color: #e84d37;
   
 }
 
-.footer-menu a:hover, .item-description a:hover, .main-navigation a:hover {
+.footer-menu a:hover, .item-description a:hover, .main-navigation a:hover:not(.active) {
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 .btn-toggle {
@@ -1256,6 +1281,44 @@ fieldset {
   padding-left: 15px;
   
   
+}
+.active {
+  display: block;
+  width: 85px;
+  height: 24px;
+  line-height: 24px;
+ 
+  background-color: #e74e37;
+  text-align: center;
+  color: #fff;
+  
+  
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+.basketform-block {
+  position: absolute;
+  top: 35%;
+  right:0%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 535px;
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.items-form {
+  border-bottom: 1px solid #cacac7;
+}
+.intotal {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-top: 15px;
 }
 /*==================modal-content============================================*/
 

@@ -17,8 +17,8 @@
         
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#">Каталог</a>
+            <li >
+              <a class="active">Каталог</a>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -31,8 +31,52 @@
 
         <div class="user-block">
             <a class="btn-search" href="#">Поиск</a>
+            <div class="searchform">
+              <form>
+                <input type="search" name="search" placeholder="Что Ищем?">
+              </form>
+            </div>            
             <a class="btn-login" href="#">Вход</a>
-            <a class="btn-basket" href="#">Пусто</a>
+            <div class="login-wrapper">
+              
+              <form class="login-form">
+                <input class="emaillogin" type="email" name="email" placeholder="Электронная почта">
+                <input class="password" type="password" name="password" placeholder="Пароль">
+                <input class="submitlogin" type="submit" name="submit" value="Войти">
+                
+                <div class="linkslogin">
+                  <a class="linklogin" href="#">Забыли пароль?</a>
+                  <a class="linklogin" href="#">Новая регистрация</a>
+                </div>
+                             
+              </form>
+
+              
+
+            </div>            
+            <a class="btn-basket-full" href="#">2 товара</a>
+            <form class="basketform-block">
+              
+              <div class="items-form">
+                <button class="btn-remove btn-1" type="button" title="Убрать">Убрать</button>
+                <span class="name-item">Пломбир с апельсиновым джемом</span>
+                <span class="wt">1,5 кг x</span>
+                <span class="price-forwt">200 руб.</span>
+                <span class="price-foritem">300 руб.</span>
+                <button class="btn-remove btn-2" type="button" title="Убрать">Убрать</button>
+                <span class="name-item">Клубничный пломбир с присыпкой из белого шоколада</span>
+                <span class="wt">1,5 кг x</span>
+                <span class="price-forwt">300 руб.</span>
+                <span class="price-foritem">450 руб.</span>
+              </div>
+              
+              
+              <div class="intotal">
+                <span>Итого: 750 руб.</span>
+                <input class="btn-formbasket" type="submit" name="submit" value="Оформить">
+              </div>
+
+            </form>
             <div class="shedule">
               <p>с 10 до 20, ежедневно</p>
               <span>8 812 450-25-25</span>
