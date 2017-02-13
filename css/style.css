@@ -1312,13 +1312,28 @@ fieldset {
   z-index: 1;
 }
 .items-form {
+  width: 430px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;  
   border-bottom: 1px solid #cacac7;
 }
 .intotal {
   display: flex;
   flex-direction: column;
+  width: 170px;
   margin-left: auto;
   margin-top: 15px;
+
+}
+.row-1 {
+  margin-bottom: 20px;
+}
+.row-2 {
+  margin-bottom: 25px;
+}
+.name-total {
+
 }
 /*==================modal-content============================================*/
 
