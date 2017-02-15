@@ -151,12 +151,16 @@
 
             <fieldset class="field-fatness">
               <div class="fatness-form">
-                <label class="name-filter" for="0">Жирность:</label><br>
+                <label class="name-filter" for="fat1">Жирность:</label><br>
                 <label class="background-fatness">
-                  <label class="values-form"><input type="radio" id="0" name="fatness" value="0"> 0% </label>
-                  <label class="values-form"><input type="radio" name="fatness" value="10" checked>до 10%</label>
-                  <label class="values-form"><input type="radio" name="fatness" value="30"> до 30%</label>
-                  <label class="values-form"><input type="radio" name="fatness" value="over30"> выше 30%</label>
+                  <input class="fat" type="radio" id="fat1" name="fatness" value="0">
+                  <label class="values-form" for="fat1"> 0% </label>
+                  <input class="fat" type="radio" id="fat2" name="fatness" value="10" checked>
+                  <label class="values-form" for="fat2">до 10%</label>
+                  <input class="fat" type="radio" id="fat3" name="fatness" value="30">
+                  <label class="values-form" for="fat3"> до 30%</label>
+                  <input class="fat" type="radio" id="fat4" name="fatness" value="over30">
+                  <label class="values-form" for="fat4"> выше 30%</label>
                 </label>
               </div>
             </fieldset>
@@ -164,13 +168,18 @@
             <fieldset class="field-fillers">
               <div class="fillers-form">
                 
-                <label class="name-filter name-fillers" for="fillers"> Наполнители:</label><br>
+                <label class="name-filter name-fillers" for="fill1"> Наполнители:</label><br>
                 <label class="background-fillers">
-                  <label class="values-form"><input type="checkbox" id="fillers" checked> шоколадные</label>
-                  <label class="values-form"><input type="checkbox" checked> Сахарные присыпки</label>
-                  <label class="values-form"><input type="checkbox"> Фрукты</label>
-                  <label class="values-form"><input type="checkbox"> Сиропы</label>
-                  <label class="values-form"><input type="checkbox"> Джемы</label>
+                  <input class="val" type="checkbox" id="fill1" checked>
+                  <label class="values-form" for="fill1"> шоколадные</label>
+                  <input class="val" type="checkbox" id="fill2" checked>
+                  <label class="values-form" for="fill2"> Сахарные присыпки</label>
+                  <input class="val" type="checkbox" id="fill3">
+                  <label class="values-form" for="fill3"> Фрукты</label>
+                  <input class="val" type="checkbox" id="fill4">
+                  <label class="values-form" for="fill4"> Сиропы</label>
+                  <input class="val" type="checkbox" id="fill5">
+                  <label class="values-form" for="fill5"> Джемы</label>
                 </label>
               </div>
             </fieldset>
@@ -223,7 +232,7 @@
               <div class="hover-wrapper">
                 <a class="btn-fast-view" href="">Быстрый просмотр</a>
               </div>
-                            
+
           
               
               
