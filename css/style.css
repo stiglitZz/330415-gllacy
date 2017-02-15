@@ -1500,8 +1500,7 @@ fieldset {
   position: relative;
 }
 .hover-wrapper:hover {
-  /*top: -5%;
-  left: -5%;*/
+  
   
   height: 410px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1528,7 +1527,6 @@ fieldset {
 }
 .img-item-catalog:hover + .btn-fast-view {
   display: block;
-  border-bottom: 0;
 }
 
 
