@@ -629,7 +629,7 @@ input[type="search"] {
   box-shadow: 0px 5px 2px 0px rgba(149, 39, 24, 1) inset;
   background-color: #e74e37;
 }
-.method:hover, .method:active , .footer-menu a:hover, /*.item-description a:hover,*/ .main-navigation a:hover:not(.active) {
+.method:hover, .method:active , .footer-menu a:hover, .main-navigation a:hover:not(.active-header) {
   color: #e84d37;
   
 }
@@ -1632,17 +1632,32 @@ fieldset {
 .item-catalog {
   position: relative;
 }
-.hover-wrapper:hover {
-  
-  
+.photo-img {
+  position: relative;
+}
+.img-item-catalog:hover::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -6%;
+  width: 300px;
   height: 410px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  cursor: pointer;
+
 }
+/*.hover-wrapper:hover {
+  
+  width: 320px;
+  height: 410px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}*/
 .btn-fast-view {
   position: absolute;
   display: none;
-  bottom: 20px;
+  top:  102%; 
   left: 35px;
   text-align: center;
   width: 190px;
@@ -1653,13 +1668,14 @@ fieldset {
   border-top-right-radius: 27px;
   border-bottom-left-radius: 27px;
   border-bottom-right-radius: 27px;
-  z-index: 1;
+  z-index: 42;
 }
 .item-description-catalog a:hover  {
   border-bottom: 0;
 }
 .img-item-catalog:hover + .btn-fast-view {
   display: block;
+  z-index: 42;
 }
 
 
