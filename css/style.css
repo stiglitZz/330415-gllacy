@@ -214,17 +214,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main-navigation {
-  
-  width: 600px;
-  height: 200px;
-  margin-right: auto;
-  margin-top: 32px;
-  
-}
-.main-navigation li {
-  display: inline-block;
-}
+
 .main-navigation a,
 .footer-menu a,
 .academylink {
@@ -235,11 +225,18 @@ a {
 
   
 }
+.main-navigation {
+  margin-top: 30px;
+  margin-right: auto;
+}
 .main-navigation ul {
-  align-items: baseline;
   padding: 0;
-  font-size: 0;
-  width: 600px;
+  margin: 0;
+}
+.main-navigation li {
+  display: inline-block;
+  margin-right: 25px;
+  vertical-align: middle;
 }
 .index-list {
   position: absolute;
@@ -326,16 +323,8 @@ a {
 }
   
 
-.main-navigation-catalog li:not(.active-header) {
-  width: 160px;
-  list-style: none;
-  vertical-align: top;
-  margin-right: 30px;
-  font-size: 16px;
-} 
-.main-navigation-catalog a {
-  
-}
+
+
 .index-catalog-btn {
   position: relative;
  
@@ -527,6 +516,7 @@ input[type="search"] {
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
   position: relative;
+  text-decoration: none;
 }
 .btn-login::before {
   content: "";
@@ -752,7 +742,7 @@ input[type="search"] {
 }
 .btn-slide {
   display: inline-block;
-  
+  text-decoration: none;
   vertical-align: top;
   width: 270px;
   height: 60px;
@@ -892,6 +882,7 @@ body > input[type="radio"] {
 .promo-right .btn-promo {
   
   display: inline-block;
+  text-decoration: none;
   width: 164px;
   height: 45px;
   margin-left: 370px;
@@ -1124,6 +1115,7 @@ body > input[type="radio"] {
 }
 .btn-feedback {
   display: block;
+  text-decoration: none;
   width: 250px;
   height: 45px;
   line-height: 45px;
