@@ -82,7 +82,6 @@ body {
  margin: 0;
 }
 a {
-  font-style: 'Roboto';
   color: #fff;
 }
 
@@ -91,14 +90,12 @@ a {
   outline: 2px dotted #f0f;
 }*/
 .index-items {
-  font-family: 'Roboto';
 }
 .main-navigation {
   font-size: 16px;
 } 
 .user-block,
 .name-filter {
-  font-family: 'Roboto';
   font-size: 14px;
   font-weight: 500;
   
@@ -119,21 +116,18 @@ a {
 
 .title-promo,
 .title-catalog {
-  font-family: 'Roboto';
   font-size: 35px;
 }
 .item-description,
 .values-form,
 .btn-apply,
 .paginator {
-  font-family: 'Roboto';
   font-size: 16px; 
   font-weight: 500;
 }
 
 
 .img-item span {
-  font-family: 'Roboto';
   font-size: 45px;
 }
 .title-features {
@@ -163,7 +157,6 @@ a {
 .index-address  p,
 .index-address p > .link-phone
  {
-  font-family: 'Roboto';
   color: #323232;
   font-size: 14px;
   font-weight: 400;
@@ -183,7 +176,6 @@ a {
   font-weight: 400;
 }
 .catalog-breadcrumbs {
-  font-family: 'Roboto';
   font-size: 14px;
   font-weight: 400;
 }
@@ -193,7 +185,7 @@ a {
 .container {
   padding: 0 10px;
   margin: 0 auto;
-  width: 1200px;
+  width: 1180px;
 
 }
 
@@ -232,11 +224,13 @@ a {
 .main-navigation ul {
   padding: 0;
   margin: 0;
+  font-size: 0;
 }
 .main-navigation li {
   display: inline-block;
   margin-right: 25px;
   vertical-align: middle;
+  font-size: 16px;
 }
 .index-list {
   position: absolute;
@@ -258,14 +252,11 @@ a {
 .index-list-wrapper {
   position: absolute;
   top: 25px;
-  left: 215px;
+  left: 250px;
   width: 80px;
   height: 50px;
 }
-.index-catalog-btn:hover .index-list {
-  visibility: visible;
-  z-index: 2;
-}
+
 .index-list-wrapper:hover .index-list {
   visibility: visible;
   z-index: 2;
@@ -276,17 +267,19 @@ a {
   z-index: 0;
 
 }
-.index-list a:active:not(.title-list) {
-  background-color: rgba(208, 112, 88, 0.6);
-
+.index-list .current {
+  display: block;
+  color: #fff;
+  background-color: #d07058;
 }
+
+
 .index-list a {
   color: #000;
   display: block;
   width: 120px;
   font-size: 14px;
   line-height: 16px;
-  box-shadow: 0 0 0 0 ; 
   padding: 10px 20px;
 }
 .index-list li,
@@ -616,7 +609,7 @@ input[type="search"] {
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow:  0 2px 2px rgba(172, 16, 0, 1) inset;
 }
-.method:hover, .method:active , .footer-menu a:hover, .main-navigation a:hover:not(.active) {
+.method:hover, .method:active , .footer-menu a:hover, .main-navigation a:hover:not(.active):not(.index-list a) {
   color: #e84d37;
   
 }
@@ -650,8 +643,8 @@ input[type="search"] {
 .fat + label:hover::before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: 0;
+  top: -2px;
+  left: -1px;
 
   display: inline-block;
   width: 20px;
@@ -674,8 +667,8 @@ input[type="search"] {
 .fat:checked + label:hover::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 6px;
+  top: 4px;
+  left: 5px;
   border-radius: 50%;
   display: inline-block;
   width: 12px;
@@ -705,8 +698,8 @@ input[type="search"] {
 .val + label:hover::before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: 0;
+  top: -2px;
+  left: -1px;
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -726,15 +719,14 @@ input[type="search"] {
 .val:checked + label:hover::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 1px;  
+  top: -1px;
+  left: 0px;  
   background-image: url("../img/icons/checkbox.png");
   background-repeat: no-repeat;
   width: 17px;
   height: 15px;
 }
 .site-wrapper {
-  min-width: 1200px;
   transition: background-image 0.5s ease, background-color 0.5s ease;
   background-repeat: no-repeat;
   background-position: top center;
@@ -863,6 +855,7 @@ body > input[type="radio"] {
   position: relative;
   margin-top: 30px;
   margin-bottom: 40px;
+  width: 1180px;
   
 }
 
@@ -879,12 +872,11 @@ body > input[type="radio"] {
 
 
 
-.promo-left,
-.promo-right,
+
+
+
+
 .img-item,
-.index-features,
-.index-news,
-.index-subscribe,
 .index-map
  {
   position: relative;
@@ -970,7 +962,7 @@ body > input[type="radio"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1200px;
+  width: 1180px;
 }
 .item-description {
   margin-top: 15px;
@@ -1073,13 +1065,12 @@ body > input[type="radio"] {
 .news-sub {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 .index-map {
   margin-top: 60px;
   width: 100%;
   height: 430px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
 }
 .map-pin {
@@ -1132,10 +1123,9 @@ body > input[type="radio"] {
   position: absolute;
   right: 55px; 
   bottom: 30px; 
-  width: 270px;
-  height: 305px;
-  padding-left: 30px;
-  padding-top: 30px;
+  width: 250px;
+  height: 290px;
+  padding: 30px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -1217,17 +1207,16 @@ body > input[type="radio"] {
   width: 210px;
 }
 .footer-social ul {
-  
   padding-left: 0;
+  font-size: 0;
 }
 .footer-social li {
   display: inline-block;
-  font-size: 0;
   width: 37px;
   height: 37px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  
   position: relative;
+  margin-right: 10px;
 }  
 .social-btn {
   display: block;
@@ -1238,6 +1227,7 @@ body > input[type="radio"] {
   width: 31px;
   height: 31px;
   opacity: 0.5;
+  border: 3px solid #c2cec7;
 }
 .social-btn:hover {
   opacity: 1;
@@ -1253,7 +1243,7 @@ body > input[type="radio"] {
   display: block;
   top: 6.5%;
   left: 6.8%;
-  background: url("../img/icons/spritesheet.png") no-repeat -9px -538px;
+  background: url("../img/icons/spritesheet.png") no-repeat -10px -539px;
   
   
 } 
@@ -1261,7 +1251,7 @@ body > input[type="radio"] {
   display: block;
   top: 6.5%;
   left: 6.5% ;
-  background: url("../img/icons/spritesheet.png") no-repeat -10px -272px;
+  background: url("../img/icons/spritesheet.png") no-repeat -10px -273.5px;
 }
 .fb-btn {
   display: block;
@@ -1279,18 +1269,18 @@ body > input[type="radio"] {
   width: 420px;
 }
 .footer-menu ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  font-size: 0;
   width: 330px;
-  height: 40px;
   position: relative;
   
 }
 .footer-menu li {
+  display: inline-block;
   list-style: none;
+  font-size: 13px;
   width: 165px;
-  height: 25px;
+
+  
 }
 .footer-menu li:first-child::before {
   content: "";
@@ -1302,17 +1292,18 @@ body > input[type="radio"] {
   left: 20px;
 
 }
+
+.footer-menu li:nth-child(odd) {
+  width: 130px;
+}
+
 .footer-copyright {
+  display: flex;
+  flex-direction: column;
   width: 200px;
-  margin-top: 10px;
-  position: relative;
   
 }
-.footer-copyright p {
-  display: block;
-  width: 190px;
-  position: absolute;
-  top: 25px;
+.footer-copyright span {
 }
   
 
@@ -1451,10 +1442,34 @@ fieldset {
   width: 170px;
   height: 22px;
   display: block;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;  
+  border-radius: 15px;
+  position: relative;  
+}
+.scale {
+  margin-top: 9px;
+  height: 5px;
+  background: #d1dad3;
+}
+.bar {
+
+  height: 5px;
+  background: #fff;
+
+}
+.toggle {
+  position: absolute;
+  top: 7px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+.min-toggle {
+  left: 25px;
+}
+.max-toggle {
+  left: 105px;
 }
 .fillers-form {
   width: 590px;
@@ -1464,6 +1479,7 @@ fieldset {
   display: flex;
   width: 250px;
   margin-left: auto;
+  align-items: center;
   
 }
 .paginator a {
@@ -1471,6 +1487,8 @@ fieldset {
 }
 .paginator ul {
   padding: 0;
+  font-size: 0;
+
 }
 .paginator li {
   display: inline-block;
@@ -1507,8 +1525,7 @@ fieldset {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
 }*/    
-/* Я нихера не понимаю,как таким методом сделать - НЕ прыгающие сцуко , ХОВЕРЫ!!! >_<
-                                                  психанул,сделал на псевдоэлементе,у меня аж глаз стал дергаться вместе с кнопками...*/      
+      
 .pagebtn:hover::before {
   content: "";
   position: absolute;
@@ -1525,7 +1542,6 @@ fieldset {
   background: url("../img/icons/arrow_left.png") no-repeat;
   width: 9px;
   height: 14px;
-  cursor: pointer;
   opacity: 0.3;
   
 
@@ -1540,7 +1556,7 @@ fieldset {
   height: 14px;
 }
 .dividing-line {
-
+  width: 95%;
   opacity: 0.3;
 }
 
@@ -1649,7 +1665,6 @@ fieldset {
   left: 13px;
 }
 .btn-formbasket {
-  font-family: 'Roboto';
   font-size: 18px;
   font-weight: 700;
   line-height: 43px;
@@ -1735,7 +1750,6 @@ text-decoration: none;
 /*==================modal-content============================================*/
 
 .modal-content {
-  font-family: 'Roboto';
   position: absolute;
   display: none;
   top: 60%;
@@ -1756,7 +1770,6 @@ text-decoration: none;
 }
 .input-for-style-fdbck,
 .review-modal {
-  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
@@ -1778,7 +1791,6 @@ text-decoration: none;
   font-weight: 500;
 }
 .btn-modal-submit {
-  font-family: 'Roboto';
   width: 150px;
   height: 43px;
   line-height: 43px;

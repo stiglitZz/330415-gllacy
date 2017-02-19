@@ -23,6 +23,32 @@
         <ul>
           <li class="active-header">
             <a class="active">Каталог</a>
+            <div class="index-list-wrapper"> 
+                  <ul class="index-list">
+                    <li class="title-li">
+                      <a class="title-list">Новинки</a>
+                    </li>
+
+
+                    <li>
+                      <a class="current">Сливочное</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Щербеты</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Фруктовый лед</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Мелорин</a>
+                    </li>
+
+
+                  </ul>
+                </div>            
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -143,11 +169,14 @@
 
           <fieldset class="field-price">
             <div class="price-form">
-              <label class="name-filter" for="price">Цена: 100руб. - 500руб.</label>
-              <label class="background-price">
-                  <input class="price-input" type="range" name="price" id="price" min="100" max="2000"
-                  step="100" value="100">
-                </label>
+              <div class="name-filter">Цена: 100руб. - 500руб.</div>
+              <div class="background-price">
+                  <div class="scale"><div class="bar" style="margin-left: 30px;width: 75px;">
+                    
+                  </div></div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+              </div>
 
             </div>
           </fieldset>
@@ -426,34 +455,36 @@
           </div>
         </article>
         
+                 
+        
 
 
       </section>
-      <nav class="paginator">
-          <ul>
-            <li>
-              <div class="previous"><a href="#">влево</a></div>
-            </li>
-            <li class="active">
-              1
-            </li>
-            <li class="pagebtn">
-              <a href="#">2</a>
-            </li>
-            <li class="pagebtn">
-              <a href="#">3</a>
-            </li>
-            <li class="pagebtn">
-              <a href="#">4</a>
-            </li>
-            <li class="pagebtn">
-              <a href="#">5</a>
-            </li>
-            <li>
-              <div class="next"><a href="#">вправо</a></div>
-            </li>
-          </ul>
-        </nav>      
+      
+      <ul class="paginator">
+        <li>
+          <div class="previous"><a>влево</a></div>
+        </li>
+        <li class="active">
+          1
+        </li>
+        <li class="pagebtn">
+          <a href="#">2</a>
+        </li>
+        <li class="pagebtn">
+          <a href="#">3</a>
+        </li>
+        <li class="pagebtn">
+          <a href="#">4</a>
+        </li>
+        <li class="pagebtn">
+          <a href="#">5</a>
+        </li>
+        <li>
+          <div class="next"><a href="#">вправо</a></div>
+        </li>
+      </ul>
+             
 
 
 
@@ -463,9 +494,7 @@
   </main>
 
   <footer>
-    <div class="container">
-      <hr class="dividing-line">
-    </div>
+    <hr class="dividing-line">
     <div class="container footer-layout">
 
       <section class="footer-social">
