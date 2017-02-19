@@ -87,9 +87,9 @@ a {
 }
 
 /* ============================================FONTS=========================*/
-* {
+/** {
   outline: 2px dotted #f0f;
-}
+}*/
 .index-items {
   font-family: 'Roboto';
 }
@@ -240,33 +240,41 @@ a {
 }
 .index-list {
   position: absolute;
-  top: 12%;
+  top: 70%;
   left: 18.5%;
   list-style: none;
-  
   box-shadow: 6px 16px 13px 0px rgba(50, 50, 50, 0.52);
-  max-width: 150px;
+  width: 150px;
   display: flex;
   flex-direction: column;
-  
   background-color: #fff;
   color: #000; 
+  visibility: hidden;
   border-radius: 5px;
-  
   z-index: 1;
-  display: none;
+  
 
 }
 .index-list-wrapper {
-  
+  position: absolute;
+  top: 25px;
+  left: 215px;
+  width: 80px;
+  height: 50px;
 }
-.index-catalog-btn:hover + .index-list {
-  display: block;
+.index-catalog-btn:hover .index-list {
+  visibility: visible;
+  z-index: 2;
+}
+.index-list-wrapper:hover .index-list {
+  visibility: visible;
+  z-index: 2;
 
 }
 .index-list a:hover:not(.title-list) {
   background-color: rgba(208, 112, 88, 0.4);
- 
+  z-index: 0;
+
 }
 .index-list a:active:not(.title-list) {
   background-color: rgba(208, 112, 88, 0.6);
@@ -334,11 +342,14 @@ a {
 
 .index-catalog-btn {
   position: relative;
+  z-index: 5;
+
  
 }
 .index-catalog-btn:hover::after {
-  display: block;
-     
+  visibility: visible;
+  z-index: 7;
+
 }
 .index-catalog-btn::after {
   content: "Каталог";
@@ -353,12 +364,8 @@ a {
   text-align: center;
   z-index: 1;
   background-color: #fff;
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
-  display: none;
-
+  border-radius: 14px;
+  visibility: hidden;
 
 }
 .index-catalog-btn:active::after {
@@ -378,10 +385,7 @@ a {
   width: 247px;
   height: 200px;
   box-shadow: 6px 16px 13px 0px rgba(50, 50, 50, 0.52);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;  
+  border-radius: 5px;  
 }
 
   
@@ -403,10 +407,7 @@ a {
   border: 1px solid #d3d3d2;
   outline: 0;
   width: 195px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;  
+  border-radius: 5px;  
 }
 .password {
   margin-top: 0;
@@ -419,10 +420,7 @@ a {
   height: 40px;
   line-height: 40px;
   margin-left: 20px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px; 
+  border-radius: 15px; 
 }
 .linkslogin {
   display: flex;
@@ -515,10 +513,7 @@ input[type="search"] {
   padding-left: 43px;
   line-height: 33px;
   background-color: rgba(255, 255, 255, 0.2);
-  border-top-left-radius: 13px;
-  border-bottom-left-radius: 13px;
-  border-top-right-radius: 13px;
-  border-bottom-right-radius: 13px;
+  border-radius: 14px;
   position: relative;
   text-decoration: none;
 }
@@ -575,10 +570,7 @@ input[type="search"] {
   padding-left: 45px;
   background-color: #fff;
   color: #000;
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
+  border-radius: 14px;
   position: relative;  
 
 }
@@ -629,7 +621,7 @@ input[type="search"] {
   
 }
 
-.footer-menu a:hover, .main-navigation a:hover:not(.active) {
+.footer-menu a:hover, .main-navigation a:hover:not(.active):not(.index-list a) {
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
